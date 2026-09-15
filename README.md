@@ -1,4 +1,4 @@
-# bol_discrete_processing_tool
+# Burke-o-Lator Discrete Sample Processing Tool
 ## Introduction
 This code and R Shiny app was developed to help Alaskan Burke-o-Lator (BoL) operators process discrete sample data. The overall processing protocol was developed by Dr. Wiley Evans at the Hakai Institute and has been described in Evans et al., 2015 and the references therein.
 
