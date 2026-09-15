@@ -16,11 +16,16 @@ CSV files:
 
 - bottle_inventory_public: this is a slim test example an organization's local inventory, where the collection information about discrete samples (e.g., in-situ temperature) is stored. 
 
-BoL Fit files (folder)
+BoL Fit files (BoL_std_fit_files_example.zip)
 - These files are GstdFit and LstdFit files automatically exported by the BoL. They are provided here as an example, but future users should point their local app toward the directory their BoL exports to.
 
 ## Usage:
-Before using this tool:
+Downloading this tool:
+ 1. The app_public.zip contains all the scripts and referenced csv files within the same Rproject. These should stay together within the same directory.
+ 2. Create an "exported_data" folder within the same directory as the Rproject.
+ 3. Unzip the BoL_std_fit_files_example.zip a different folder. Users will need to point the app towards this folder or their true BoL export folder explicitly in the app_public.R script in line 16.
+    
+Before processing data tool:
  This tool assumes BoL operators have pulled the raw DescSmpl export from their discrete sample run on the BoL into a spreadsheet and made the following corrections if necessary:
  1. Eliminated extra gas and liquid standard runs such that there is one set of pre-sample standards, one set of mid-run standards, and one set of post-run standards. If no mid-run standards occurred, operators must include two sets of post-run standards.
  2. Sample names exactly match those in the local inventory.
